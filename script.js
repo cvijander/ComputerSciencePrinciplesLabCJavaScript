@@ -1,35 +1,19 @@
 // JavaScript Document
 
-//Define a variable with integer value 
-var outsideValue = 5 ;
+var subtotal = 15.00;
 
-//output variables to the console
-////console.log("From outside: outsideValue = " +outsideValue);
-//console.log("From outside: functionValue = " + functionValue);
+console.log("Subtotal: " + subtotal);
 
+var total = subtotal + calculateTax(0.08, subtotal);
 
-myFunction();
+console.log("Total: " + total);
 
- myOtherFunction();
-
-
-function myFunction()
+function calculateTax(taxRate, amountToTax)
 {
-    // create variable inside of a function
-    var functionValue = 10;
+    var tax = amountToTax *taxRate;
+    console.log("Tax: " + tax);
+   return tax;
 
-    // output variables to the console 
-    console.log("From inside: outsideValue = " + outsideValue);
-    console.log("From inside: functionValue = " + functionValue);
-
-    
-}
-
-function myOtherFunction()
-{
-    // output variables to the console 
-    console.log("From inside: outsideValue = " + outsideValue);
-    console.log("From inside: functionValue = " + functionValue);
 }
 
 
