@@ -1,20 +1,23 @@
 // JavaScript Document
 
-var subtotal = 15.00;
-
-console.log("Subtotal: " + subtotal);
-
-var total = subtotal + calculateTax(0.08, subtotal);
-
-console.log("Total: " + total);
-
-function calculateTax(taxRate, amountToTax)
+function init()
 {
-    var tax = amountToTax *taxRate;
-    console.log("Tax: " + tax);
-   return tax;
-
+    document.getElementById("textOutput").innerHTML = "Enter your name and then click the button.";
 }
+
+function clickButton()
+{
+  var name =  document.getElementById("textEntry").value;
+
+  document.getElementById("textOutput").innerHTML = createGreeting(name);
+}
+
+function createGreeting(newName)
+{
+    var greeting = "Hello, " +newName + "!";
+    return greeting;
+}
+
 
 
 
