@@ -1,67 +1,55 @@
 // JavaScript Document
 
-var knowJavaScript =true;
-console.log("The variable knowJavaScript is equal to " + knowJavaScript + " and is a " +typeof knowJavaScript );
-
-if(knowJavaScript)
+if (true || false)
 {
-    console.log("I know JavaScript!");
+    console.log("Only one value needs to be true in an OR statement for the whole evalatuatin to be true");
 }
 
-
-var myValue = 5;
-console.log("myValue is equal to 5");
-
-if(myValue == 5)
+if(true && false)
 {
-    console.log("The condition (myValue ==5 ) is true.");
-}
-
-
-var myValue = 5;
-console.log("myValue is equal to 5");
-
-if (myValue < 5)
-{
-    console.log("The condition (myValue < 5) is true");
+    //
 }
 else 
 {
-    console.log("This condition (myValue <5 ) is false");
+    console.log("Both values need to be true for and AND statement to be true");
 }
 
+var myMaxLimit = 20;
+var myMinLimit =5;
+var myValue =10;
 
-var myValue = 5;
-console.log("myValue is equal to 5");
-
-if(myValue != 5)
+if(myValue <myMaxLimit && myValue > myMinLimit)
 {
-    console.log("This condition (myValue != 5) is true ");
-}
-else if (myValue  >5  )
-{
-console.log("This condition (myValue >5) is true");
+    console.log("The value " +myValue + " is between " + myMinLimit + " and " + myMaxLimit);
 }
 else 
 {
-console.log("All the test are false");
+    console.log("Tha value " +myValue + " is not between " + myMaxLimit + " and " + myMinLimit);
 }
 
+var myMaxXLimit = 5;
+var myMinXLimit =1;
+var myMaxYLimit =3;
+var myMinYLimit =1;
 
-var myValue = 5;
-console.log("myValue is equal to 5");
+var myXValue =6;
+var myYValue =2;
 
-if(myValue >= 1 )
+if((myXValue < myMaxXLimit && myXValue >myMinXLimit)&&(myYValue <myMaxYLimit && myYValue > myMinYLimit))
 {
-    console.log("The condition (myValue >= 1) is true ");
-    if(myValue <=5 )
-    {
-        console.log("The condition (myValue <= 5) is true");
-    }
+    console.log("Both the X and Y are withing limits");
+}
+else 
+{
+    console.log("One of them are outside of the limits");
 }
 
 
-
+var myBoolean =false;
+if(!myBoolean)
+{
+    console.log("The value is true");
+}
 
 
 
