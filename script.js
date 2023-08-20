@@ -1,26 +1,29 @@
 // JavaScript Document
 
-function init()
-{
-    document.getElementById("textOutput").innerHTML = "Enter your name and then click the button.";
-}
+var myVariable = 5;
 
-function clickButton()
-{
-  var name =  document.getElementById("textEntry").value;
+var msg ="myVariable is equal to " +myVariable + " and is a " + typeof myVariable;
+console.log(msg);
 
-  document.getElementById("textOutput").innerHTML = createGreeting(name);
-}
+myVariable = myVariable .toString();
 
-function createGreeting(newName)
-{
-    var greeting = "Hello, " +newName + "!";
-    return greeting;
-}
+var msg ="myVariable is equal to " +myVariable + " and is a " + typeof myVariable;
+console.log(msg);
 
+myVariable =myVariable +1;
+myVariable +=1;
 
+var msg ="myVariable is equal to " +myVariable + " and is a " + typeof myVariable;
+console.log(msg);
 
+myVariable = Number(myVariable) +1;
+var msg ="myVariable is equal to " +myVariable + " and is a " + typeof myVariable;
+console.log(msg);
 
+myVariable =Number("1,2345.56");
+
+var msg ="myVariable is equal to " +myVariable + " and is a " + typeof myVariable;
+console.log(msg);
 
 
 
