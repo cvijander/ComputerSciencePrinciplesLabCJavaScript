@@ -1,29 +1,73 @@
 // JavaScript Document
 
-var myVariable = 5;
+var knowJavaScript =true;
+console.log("The variable knowJavaScript is equal to " + knowJavaScript + " and is a " +typeof knowJavaScript );
 
-var msg ="myVariable is equal to " +myVariable + " and is a " + typeof myVariable;
-console.log(msg);
+if(knowJavaScript)
+{
+    console.log("I know JavaScript!");
+}
 
-myVariable = myVariable .toString();
 
-var msg ="myVariable is equal to " +myVariable + " and is a " + typeof myVariable;
-console.log(msg);
+var myValue = 5;
+console.log("myValue is equal to 5");
 
-myVariable =myVariable +1;
-myVariable +=1;
+if(myValue == 5)
+{
+    console.log("The condition (myValue ==5 ) is true.");
+}
 
-var msg ="myVariable is equal to " +myVariable + " and is a " + typeof myVariable;
-console.log(msg);
 
-myVariable = Number(myVariable) +1;
-var msg ="myVariable is equal to " +myVariable + " and is a " + typeof myVariable;
-console.log(msg);
+var myValue = 5;
+console.log("myValue is equal to 5");
 
-myVariable =Number("1,2345.56");
+if (myValue < 5)
+{
+    console.log("The condition (myValue < 5) is true");
+}
+else 
+{
+    console.log("This condition (myValue <5 ) is false");
+}
 
-var msg ="myVariable is equal to " +myVariable + " and is a " + typeof myVariable;
-console.log(msg);
+
+var myValue = 5;
+console.log("myValue is equal to 5");
+
+if(myValue != 5)
+{
+    console.log("This condition (myValue != 5) is true ");
+}
+else if (myValue  >5  )
+{
+console.log("This condition (myValue >5) is true");
+}
+else 
+{
+console.log("All the test are false");
+}
+
+
+var myValue = 5;
+console.log("myValue is equal to 5");
+
+if(myValue >= 1 )
+{
+    console.log("The condition (myValue >= 1) is true ");
+    if(myValue <=5 )
+    {
+        console.log("The condition (myValue <= 5) is true");
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
