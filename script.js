@@ -1,22 +1,28 @@
 // JavaScript Document
 
-var myValue = 0;
-
-while (myValue < 100)
+for (var i =0; i< 25; i++)
 {
-    if(myValue % 9 ==0 )
+    console.log("The square of " + i + " is " + Math.pow(i,2));
+}
+
+/* 
+  1  2  3  4  5  6   7  8  9  10  11   12 
+  2  4  6  8  10 12  14 16 18 20 22 24
+  3....
+*/
+
+for (var a = 1; a<= 12; a++ )
+{
+    var tableRow ="";
+    for (var b =1; b <= 12; b++)
     {
-        console.log(myValue);
+       var product = a * b;
+       var productString = product.toString()+ "\t";
+       tableRow +=productString;
     }
-    myValue++;
+    console.log(tableRow);
 }
-
-var myBadValue =0;
-
-do {
-    console.log("This will only run at least once");
-}
-  while(myBadValue !=0);
+    
 
 
 
