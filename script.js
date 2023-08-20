@@ -11,19 +11,30 @@
 //create the game score
 var myScore ;
 
-//set up and chenge the game score 
-init();
-changeScore();
+//set up and change the game score 
+init(1000);
+changeScore(100);
+changeScore(50);
+changeScore(-250);
+changeScore(125);
 
 //function to initalize the game score in the game
-function init()
+function init(newScore)
 {
-myScore = 1000;
+    console.log("Setting the score to " +newScore);
+myScore = newScore;
+displayScore();
 }
 
 // function to change the score of the game
-function changeScore()
+function changeScore(scoreDelta)
 {
-    myScore = myScore +100;
+    console.log("Changing the score by " + scoreDelta);
+    myScore = myScore +scoreDelta;
+    displayScore();
+}
+
+function displayScore()
+{
     console.log("Players score: " + myScore);
 }
