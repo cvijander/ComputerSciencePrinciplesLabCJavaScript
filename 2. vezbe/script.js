@@ -7,6 +7,8 @@ var myScore ;
 init(10000);
 changeScore(150);
 changeScore(-50);
+changeScore(750);
+changeScore(-120);
 
 //function to initialize the game score in the game  
 function init(newScore){
